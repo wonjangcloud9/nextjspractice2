@@ -1,3 +1,4 @@
+import Link from "next/link";
 import "./globals.css";
 
 export const metadata = {
@@ -15,23 +16,23 @@ export default function RootLayout({ children }) {
           </h1>
           <ol>
             <li>
-              <a href="/read/1">HTML</a>
+              <Link href="/read/1">HTML</Link>
             </li>
             <li>
-              <a href="/read/2">CSS</a>
+              <Link href="/read/2">CSS</Link>
             </li>
             <li>
-              <a href="/read/3">JavaScript</a>
+              <Link href="/read/3">JavaScript</Link>
             </li>
           </ol>
         </div>
         {children}
         <ul>
           <li>
-            <a href="create">Create</a>
+            <Link href="/create">Create</Link>
           </li>
           <li>
-            <a href="update/1">Update</a>
+            <Link href="/update/1">Update</Link>
           </li>
           <li>
             <input type="button" value="Delete" />
