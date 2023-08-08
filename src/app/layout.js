@@ -15,15 +15,13 @@ export default function RootLayout({ children }) {
             <a href="/">WelCome</a>
           </h1>
           <ol>
-            <li>
-              <Link href="/read/1">HTML</Link>
-            </li>
-            <li>
-              <Link href="/read/2">CSS</Link>
-            </li>
-            <li>
-              <Link href="/read/3">JavaScript</Link>
-            </li>
+            {[1, 2, 3].map((v, index) => {
+              return (
+                <li key={index}>
+                  <Link href={`/read/${v}`}>Hello</Link>
+                </li>
+              );
+            })}
           </ol>
         </div>
         {children}
