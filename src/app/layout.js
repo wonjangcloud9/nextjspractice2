@@ -15,13 +15,13 @@ export default function RootLayout({ children }) {
           </h1>
           <ol>
             <li>
-              <a href="/redd/1">HTML</a>
+              <a href="/read/1">HTML</a>
             </li>
             <li>
-              <a href="/redd/2">CSS</a>
+              <a href="/read/2">CSS</a>
             </li>
             <li>
-              <a href="/redd/3">JavaScript</a>
+              <a href="/read/3">JavaScript</a>
             </li>
           </ol>
         </div>
